@@ -36,9 +36,9 @@ class M_jenis_latihan extends CI_model
         $this->db->update($table, $data);
     }
 
-    public function hapusdata($where, $table)
+    function delete($id)
     {
-        $this->db->where($where);
-        $this->db->delete($table);
+        $this->db->where('jenis_lat_id', $id);
+        $this->db->delete('jenis_latihan');
     }
 }

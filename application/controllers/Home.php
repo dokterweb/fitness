@@ -45,7 +45,6 @@ class Home extends CI_Controller
 		  <th scope='col'>Repetisi</th>
 		  <th scope='col'>Action</th>
 		</tr>";
-
 		$no = 1;
 		$data =  $this->m_home->tampilkan_temp()->result();
 		foreach ($data as $d) {

@@ -38,4 +38,11 @@ class Jenis_latihan extends CI_Controller
         $this->m_jenis_latihan->updatelatihan($jenis_lat_id, $nama_latihan);
         redirect('jenis_latihan');
     }
+
+    function del()
+    {
+        $id =  $this->uri->segment(3);
+        $this->m_jenis_latihan->delete($id);
+        redirect('jenis_latihan');
+    }
 }
